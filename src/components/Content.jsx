@@ -6,10 +6,10 @@ import {Switch} from "react-router-dom"
 import "../css/Content.css"
 
 // components
-import Landing from "./routes/Landing"
-import Register from "./routes/Register"
-import Login from "./routes/Login"
-import Protected from "./routes/Protected"
+import Landing from "./views/Landing"
+import Register from "./views/Register"
+import Login from "./views/Login"
+import Protected from "./views/Protected"
 import ProtectedRoute from "./ProtectedRoute"
 
 
