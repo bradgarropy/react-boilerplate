@@ -6,7 +6,7 @@ import MaterialUI from "material-ui/styles/MuiThemeProvider"
 
 // components
 import Navigation from "../navigation/Navigation"
-import User from "../user/User"
+import UserButton from "../user/UserButton"
 import Content from "./Content"
 
 // styles
@@ -29,7 +29,7 @@ const App = () => {
                 <div className="app">
 
                     <Navigation/>
-                    <User/>
+                    <UserButton/>
                     <Content/>
 
                 </div>

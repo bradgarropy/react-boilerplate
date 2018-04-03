@@ -1,7 +1,7 @@
 import React from "react"
 
 // styles
-import "./User.css"
+import "./UserButton.css"
 
 // utils
 import localstorage from "../../utils/localstorage"
@@ -21,7 +21,7 @@ const User = () => {
 
     return (
 
-        <div className="user">
+        <div className="user-button">
             {button}
         </div>
 

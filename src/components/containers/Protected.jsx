@@ -6,7 +6,7 @@ const Protected = () => {
     return (
 
         <div className="protected">
-            <h1>Protected</h1>
+            <h2>Protected</h2>
         </div>
 
     )

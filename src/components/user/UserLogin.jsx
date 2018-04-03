@@ -12,6 +12,9 @@ import users from "../../api/users"
 // utils
 import authorization from "../../utils/authorization"
 
+// styles
+import "./UserLogin.css"
+
 
 class UserLogin extends React.Component {
 
@@ -80,9 +83,7 @@ class UserLogin extends React.Component {
 
         return (
 
-            <div className="login">
-
-                <h1>Login</h1>
+            <div className="user-login">
 
                 <UserLoginForm
                     credentials={this.state.credentials}

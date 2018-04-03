@@ -4,7 +4,7 @@ import React from "react"
 const Landing = () => (
 
     <div className="landing">
-        <h1>Home</h1>
+        <h2>Home</h2>
     </div>
 
 )

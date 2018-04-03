@@ -1,13 +1,7 @@
-.login-form {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
-.login-form-form {
+.user-login-form-form {
     display: grid;
 }
 
-.login-form-button {
+.user-login-form-button {
     margin: 20px 0px;
 }

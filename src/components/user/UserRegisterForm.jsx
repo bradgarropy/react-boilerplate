@@ -12,9 +12,11 @@ import "./UserRegisterForm.css"
 
 const UserRegisterForm = (props) => (
 
-    <div className="register-form">
+    <div className="user-register-form">
 
-        <form className="register-form-form" onSubmit={this.onSubmit}>
+        <h2>Register</h2>
+
+        <form className="user-register-form-form" onSubmit={this.onSubmit}>
 
             <TextInput
                 label="First Name"
@@ -63,7 +65,7 @@ const UserRegisterForm = (props) => (
 
             <RaisedButton
                 type="submit"
-                className="register-form-button"
+                className="user-register-form-button"
                 primary
                 label="register"
                 onClick={props.onSubmit}
