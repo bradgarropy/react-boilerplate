@@ -3,14 +3,14 @@ import {Route} from "react-router-dom"
 import {Switch} from "react-router-dom"
 
 // style
-import "../css/Content.css"
+import "./Content.css"
 
 // components
-import Landing from "./views/Landing"
-import Register from "./views/Register"
-import Login from "./views/Login"
-import Protected from "./views/Protected"
-import ProtectedRoute from "./ProtectedRoute"
+import Landing from "../landing/Landing"
+import UserRegister from "../user/UserRegister"
+import UserLogin from "../user/UserLogin"
+import Protected from "./Protected"
+import ProtectedRoute from "../common/ProtectedRoute"
 
 
 const Content = () => (
@@ -19,8 +19,8 @@ const Content = () => (
 
         <Switch>
             <Route exact path="/" component={Landing}/>
-            <Route exact path="/register" component={Register}/>
-            <Route exact path="/login" component={Login}/>
+            <Route exact path="/register" component={UserRegister}/>
+            <Route exact path="/login" component={UserLogin}/>
             <ProtectedRoute exact path="/protected" component={Protected}/>
         </Switch>
 

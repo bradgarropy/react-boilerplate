@@ -4,7 +4,7 @@ import {Redirect} from "react-router-dom"
 import jwtdecode from "jwt-decode"
 
 // components
-import LoginForm from "../forms/LoginForm"
+import UserLoginForm from "../user/UserLoginForm"
 
 // api
 import users from "../../api/users"
@@ -13,7 +13,7 @@ import users from "../../api/users"
 import authorization from "../../utils/authorization"
 
 
-class Login extends React.Component {
+class UserLogin extends React.Component {
 
     constructor(props) {
 
@@ -80,12 +80,19 @@ class Login extends React.Component {
 
         return (
 
-            <LoginForm
-                credentials={this.state.credentials}
-                errors={this.state.errors}
-                onChange={this.onChange}
-                onSubmit={this.onSubmit}
-            />
+            <div className="login">
+
+                <h1>Login</h1>
+
+                <UserLoginForm
+                    credentials={this.state.credentials}
+                    errors={this.state.errors}
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                />
+
+            </div>
+
 
         )
 
@@ -94,7 +101,7 @@ class Login extends React.Component {
 }
 
 
-Login.propTypes = {
+UserLogin.propTypes = {
     location: PropTypes.shape({
         state: PropTypes.shape({
             referrer: PropTypes.string,
@@ -104,4 +111,4 @@ Login.propTypes = {
 
 
 // export
-export default Login
+export default UserLogin

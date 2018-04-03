@@ -5,15 +5,15 @@ import {BrowserRouter as Router} from "react-router-dom"
 import MaterialUI from "material-ui/styles/MuiThemeProvider"
 
 // components
-import Navigation from "./Navigation"
-import User from "./User"
+import Navigation from "../navigation/Navigation"
+import User from "../user/User"
 import Content from "./Content"
 
 // styles
-import "../css/App.css"
+import "./App.css"
 
 // utils
-import authorization from "../utils/authorization"
+import authorization from "../../utils/authorization"
 
 
 const App = () => {

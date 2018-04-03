@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 
 // style
-import "../css/Navigation.css"
+import "./Navigation.css"
 
 // material ui
 import FlatButton from "material-ui/FlatButton"

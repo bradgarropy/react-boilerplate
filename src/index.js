@@ -3,10 +3,10 @@ import ReactDOM from "react-dom"
 import registerServiceWorker from "./registerServiceWorker"
 
 // components
-import App from "./components/App.jsx"
+import App from "./components/containers/App"
 
 // styles
-import "./css/index.css"
+import "./index.css"
 
 
 ReactDOM.render(
