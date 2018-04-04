@@ -9,7 +9,7 @@ import "./Content.css"
 import Landing from "../landing/Landing"
 import UserRegister from "../user/UserRegister"
 import UserLogin from "../user/UserLogin"
-import Protected from "./Protected"
+import Feedback from "../feedback/Feedback"
 import ProtectedRoute from "../common/ProtectedRoute"
 
 
@@ -21,7 +21,7 @@ const Content = () => (
             <Route exact path="/" component={Landing}/>
             <Route exact path="/register" component={UserRegister}/>
             <Route exact path="/login" component={UserLogin}/>
-            <ProtectedRoute exact path="/protected" component={Protected}/>
+            <ProtectedRoute exact path="/feedback" component={Feedback}/>
         </Switch>
 
     </div>

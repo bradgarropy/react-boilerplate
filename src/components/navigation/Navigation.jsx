@@ -43,10 +43,10 @@ const Navigation = () => {
             />
 
             <FlatButton
-                label="protected"
+                label="feedback"
                 hoverColor="none"
                 disableTouchRipple
-                containerElement={<Link to="/protected"/>}
+                containerElement={<Link to="/feedback"/>}
                 icon={<FilterFour/>}
             />
 
