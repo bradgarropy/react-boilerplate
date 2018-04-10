@@ -6,10 +6,9 @@ import "./Navigation.css"
 
 // material ui
 import FlatButton from "material-ui/FlatButton"
-import FilterOne from "material-ui/svg-icons/image/filter-1"
-import FilterTwo from "material-ui/svg-icons/image/filter-2"
-import FilterThree from "material-ui/svg-icons/image/filter-3"
-import FilterFour from "material-ui/svg-icons/image/filter-4"
+import HomeIcon from "material-ui/svg-icons/action/home"
+import PersonAddIcon from "material-ui/svg-icons/social/person-add"
+import FeedbackIcon from "material-ui/svg-icons/action/feedback"
 
 
 const Navigation = () => {
@@ -23,7 +22,7 @@ const Navigation = () => {
                 hoverColor="none"
                 disableTouchRipple
                 containerElement={<Link to="/"/>}
-                icon={<FilterOne/>}
+                icon={<HomeIcon/>}
             />
 
             <FlatButton
@@ -31,15 +30,7 @@ const Navigation = () => {
                 hoverColor="none"
                 disableTouchRipple
                 containerElement={<Link to="/register"/>}
-                icon={<FilterTwo/>}
-            />
-
-            <FlatButton
-                label="login"
-                hoverColor="none"
-                disableTouchRipple
-                containerElement={<Link to="/login"/>}
-                icon={<FilterThree/>}
+                icon={<PersonAddIcon/>}
             />
 
             <FlatButton
@@ -47,7 +38,7 @@ const Navigation = () => {
                 hoverColor="none"
                 disableTouchRipple
                 containerElement={<Link to="/feedback"/>}
-                icon={<FilterFour/>}
+                icon={<FeedbackIcon/>}
             />
 
         </div>
