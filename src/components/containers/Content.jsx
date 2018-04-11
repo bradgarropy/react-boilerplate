@@ -9,6 +9,7 @@ import "./Content.css"
 import Landing from "../landing/Landing"
 import UserRegister from "../user/UserRegister"
 import UserLogin from "../user/UserLogin"
+import UserForgot from "../user/UserForgot"
 import UserSettingsAccount from "../user/UserSettingsAccount"
 import UserSettingsPassword from "../user/UserSettingsPassword"
 import Feedback from "../feedback/Feedback"
@@ -23,6 +24,7 @@ const Content = () => (
             <Route exact path="/" component={Landing}/>
             <Route exact path="/register" component={UserRegister}/>
             <Route exact path="/login" component={UserLogin}/>
+            <Route exact path="/forgot" component={UserForgot}/>
             <ProtectedRoute exact path="/feedback" component={Feedback}/>
             <ProtectedRoute exact path="/settings/account" component={UserSettingsAccount}/>
             <ProtectedRoute exact path="/settings/password" component={UserSettingsPassword}/>
