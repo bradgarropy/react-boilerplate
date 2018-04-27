@@ -2,7 +2,7 @@ import React from "react"
 import {Redirect} from "react-router-dom"
 
 // components
-import UserRegisterForm from "../user/UserRegisterForm"
+import UserRegisterForm from "./UserRegisterForm"
 
 // styles
 import "./UserRegister.css"
@@ -59,6 +59,7 @@ class UserRegister extends React.Component {
             .catch(error => {
 
                 const errors = error.response.data
+
                 this.setState({
                     errors,
                     submitted: false,

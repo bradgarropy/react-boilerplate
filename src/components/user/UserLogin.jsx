@@ -32,6 +32,7 @@ class UserLogin extends React.Component {
                 email: "",
                 password: "",
             },
+            submitted: false,
         }
 
         this.onChange = this.onChange.bind(this)
@@ -52,6 +53,8 @@ class UserLogin extends React.Component {
 
         event.preventDefault()
 
+        this.setState({submitted: true})
+
         users.login(this.state.credentials)
             .then((response) => {
 
@@ -69,7 +72,11 @@ class UserLogin extends React.Component {
             .catch(error => {
 
                 const errors = error.response.data
-                this.setState({errors})
+
+                this.setState({
+                    errors,
+                    submitted: false,
+                })
 
             })
 
@@ -94,16 +101,17 @@ class UserLogin extends React.Component {
                     errors={this.state.errors}
                     onChange={this.onChange}
                     onSubmit={this.onSubmit}
+                    disabled={this.state.submitted}
                 />
 
                 <FlatButton
                     label="forgot your password?"
                     hoverColor="none"
+                    disableTouchRipple
                     containerElement={<Link to="/forgot"/>}
                 />
 
             </div>
-
 
         )
 
